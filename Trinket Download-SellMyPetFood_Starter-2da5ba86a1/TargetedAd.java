@@ -34,10 +34,12 @@ public class TargetedAd {
 
     /* your code here */
     DataCollector collector = new DataCollector();
+    // USE THE ABSOLUTE PATH FROM YOUR OWN COMPUTER
+    collector.setData("C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\socialMediaPostsSmall.txt","C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\targetWords.txt");
+    System.out.println(collector.getNextPost());
+    System.out.println(collector.getNextTargetWord());
+
     String usernames = "";
-    String advertisement = "We bet your furry friend would love to smell our pet food!";
-    collector.prepareAdvertisement("sentAds", usernames, advertisement);
-     
   }
 
 }
