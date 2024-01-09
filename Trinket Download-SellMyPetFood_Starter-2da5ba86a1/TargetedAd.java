@@ -35,7 +35,7 @@ public class TargetedAd {
     /* your code here */
     DataCollector collector = new DataCollector();
     String usernames = "";
-    String advertisement = "";
+    String advertisement = "We bet your furry friend would love to smell our pet food!";
     collector.prepareAdvertisement("sentAds", usernames, advertisement);
      
   }
