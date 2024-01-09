@@ -33,7 +33,10 @@ public class TargetedAd {
 
 
     /* your code here */
-    
+    DataCollector collector = new DataCollector();
+    String usernames = "";
+    String advertisement = "";
+    collector.prepareAdvertisement("sentAds", usernames, advertisement);
      
   }
 
