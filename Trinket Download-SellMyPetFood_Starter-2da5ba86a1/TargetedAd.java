@@ -35,7 +35,7 @@ public class TargetedAd {
     /* your code here */
     DataCollector collector = new DataCollector();
     // USE THE ABSOLUTE PATH FROM YOUR OWN COMPUTER
-    collector.setData("C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\socialMediaPostsSmall.txt","C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\targetWords.txt");
+    collector.setData("C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\socialMediaPosts.txt","C:\\Users\\jburkett610\\Downloads\\Trinket Download-SellMyPetFood_Starter-2da5ba86a1\\src\\targetWords.txt");
 
     String usernames = "";
     String currentPost = "";
