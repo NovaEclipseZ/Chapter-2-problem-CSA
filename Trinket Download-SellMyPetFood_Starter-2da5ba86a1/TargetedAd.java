@@ -42,18 +42,24 @@ public class TargetedAd {
     String currentWord = "";
     int usernameSpaceThingamajig;
     boolean currentWordContained;
+    boolean indicativeWordFound;
 
     System.out.println(collector.getNumberOfPosts());
 
     for (int i = 0; i < collector.getNumberOfPosts(); i++)
       {
+          indicativeWordFound = false;
           currentPost = collector.getNextPost();
           usernameSpaceThingamajig = currentPost.indexOf(' ');
-          currentWord = collector.getNextTargetWord();
-          currentWordContained = currentPost.contains(currentWord);
-          if (currentWordContained)
+          for (int j = 0; j < collector.getNumberOfWords() && !indicativeWordFound; j++)
           {
-              usernames = usernames.concat(currentPost.substring(0, (usernameSpaceThingamajig + 1)));
+              currentWord = collector.getNextTargetWord();
+              currentWordContained = currentPost.toLowerCase().contains(currentWord);
+              if (currentWordContained)
+              {
+                  usernames = usernames.concat(currentPost.substring(0, (usernameSpaceThingamajig + 1)));
+                  indicativeWordFound = true;
+              }
           }
       }
 
