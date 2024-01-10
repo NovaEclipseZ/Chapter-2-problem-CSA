@@ -62,7 +62,7 @@ public class TargetedAd {
               }
           }
       }
-
+  collector.prepareAdvertisement("Advertisements.txt",usernames, "We bet your furry friend would love to smell our pet food!");
 
 
 
