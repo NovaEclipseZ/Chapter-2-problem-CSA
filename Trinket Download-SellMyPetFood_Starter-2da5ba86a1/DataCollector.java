@@ -113,6 +113,11 @@ public class DataCollector
     }
   }
 
+    /**
+     * Get the number of target words
+     *
+     * @return number of target words
+     */
     public int getNumberOfWords()
     {
         return targetWords.size();
